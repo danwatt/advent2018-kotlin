@@ -1,15 +1,13 @@
 package org.danwatt
 
-import java.io.File
-
-class Day1 : Day {
+class Day1 : Day(1) {
     override fun compute(): Int =
-        loadLines().sum()
+        loadLinesAsIntegers().sum()
 
-    private fun loadLines() = File(ClassLoader.getSystemResource("day1.txt").file)
-        .readLines().map { Integer.parseInt(it) }
 
-    fun computePartTwo(): Int = firstRepeat(loadLines())
+    fun computePartTwo(): Int = firstRepeat(loadLinesAsIntegers())
+
+    private fun loadLinesAsIntegers() = loadLines().map { Integer.parseInt(it) }
 
     fun firstRepeat(ints: List<Int>): Int {
         val encountered = mutableSetOf<Int>()
