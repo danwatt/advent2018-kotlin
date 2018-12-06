@@ -1,11 +1,11 @@
 package org.danwatt
 
 class Day1 : Day(1) {
-    override fun compute(): Int =
+    override fun partOne(): Int =
         loadLinesAsIntegers().sum()
 
 
-    fun computePartTwo(): Int = firstRepeat(loadLinesAsIntegers())
+    override fun partTwo(): Int = firstRepeat(loadLinesAsIntegers())
 
     private fun loadLinesAsIntegers() = loadLines().map { Integer.parseInt(it) }
 
