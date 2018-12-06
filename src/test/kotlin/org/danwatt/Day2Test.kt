@@ -81,6 +81,18 @@ differing character from either ID, producing fgij.)
      */
     @Test
     fun part2() {
-
+        assertThat(
+            Day2().findBoxes(
+                listOf(
+                    "abcde",
+                    "fghij",
+                    "klmno",
+                    "pqrst",
+                    "fguij",
+                    "axcye",
+                    "wvxyz"
+                )
+            )
+        ).containsExactly("fghij", "fguij")
     }
 }

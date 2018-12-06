@@ -11,4 +11,8 @@ class Day2 : Day(2) {
     }
 
     override fun partTwo(): Int = 0
+
+    fun findBoxes(listOf: List<String>): List<String> {
+        return emptyList()
+    }
 }
