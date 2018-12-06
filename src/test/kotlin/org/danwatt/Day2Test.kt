@@ -81,8 +81,9 @@ differing character from either ID, producing fgij.)
      */
     @Test
     fun part2() {
+        assertThat(Day2().editDistanceIsOne("fghij", "fguij")).isTrue()
         assertThat(
-            Day2().findBoxes(
+            Day2().commonCorrectBoxCharacters(
                 listOf(
                     "abcde",
                     "fghij",
@@ -93,6 +94,8 @@ differing character from either ID, producing fgij.)
                     "wvxyz"
                 )
             )
-        ).containsExactly("fghij", "fguij")
+        ).isEqualTo("fgij")
+        assertThat(Day2().partTwo()).isNotEqualTo("jiwamotgsfrudclzbykhvp").describedAs("Don't use a Set")
+        assertThat(Day2().partTwo()).isEqualTo("jiwamotgsfrudclzbyzkhlrvp")
     }
 }
