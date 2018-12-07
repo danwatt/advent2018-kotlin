@@ -75,5 +75,6 @@ class Day3Test {
     @Test
     fun part2() {
         assertThat(Day3().findNonOverlapping(listOf("#1 @ 1,3: 4x4", "#2 @ 3,1: 4x4", "#3 @ 5,5: 2x2"))).isEqualTo(3)
+        assertThat(Day3().partTwo()).isEqualTo(650)
     }
 }
