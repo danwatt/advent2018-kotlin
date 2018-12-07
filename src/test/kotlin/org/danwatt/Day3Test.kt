@@ -59,7 +59,7 @@ class Day3Test {
     @Test
     fun part1() {
         assertThat(Day3().numberOfOverlaps(listOf("#1 @ 1,3: 4x4", "#2 @ 3,1: 4x4", "#3 @ 5,5: 2x2"))).isEqualTo(4)
-        assertThat(Day3().partOne()).isEqualTo(111935)
+        assertThat(Day3().partOne()).isEqualTo(TestHelpers.decode(0x5f36ece0))
     }
 
     /*
@@ -75,6 +75,8 @@ class Day3Test {
     @Test
     fun part2() {
         assertThat(Day3().findNonOverlapping(listOf("#1 @ 1,3: 4x4", "#2 @ 3,1: 4x4", "#3 @ 5,5: 2x2"))).isEqualTo(3)
-        assertThat(Day3().partTwo()).isEqualTo(650)
+        assertThat(Day3().partTwo()).isEqualTo(TestHelpers.decode(0x5f375b55))
     }
+
+
 }
