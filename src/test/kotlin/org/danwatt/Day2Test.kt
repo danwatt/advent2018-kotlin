@@ -57,7 +57,7 @@ class Day2Test {
                 )
             )
         ).isEqualTo(12)
-        assertThat(Day2().partOne()).isEqualTo(123);
+        assertThat(Day2().partOne()).isEqualTo(5904);
     }
 
     /*
