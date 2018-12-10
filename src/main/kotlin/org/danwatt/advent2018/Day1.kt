@@ -1,6 +1,6 @@
-package org.danwatt
+package org.danwatt.advent2018
 
-class Day1 : Day<Int,Int>(1) {
+class Day1 : Day<Int, Int>(1) {
     override fun partOne() =
         loadLinesAsIntegers().sum()
 

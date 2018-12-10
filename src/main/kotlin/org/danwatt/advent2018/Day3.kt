@@ -1,4 +1,4 @@
-package org.danwatt
+package org.danwatt.advent2018
 
 class Day3 : Day<Int, Int>(3) {
     private val dimension = 1000

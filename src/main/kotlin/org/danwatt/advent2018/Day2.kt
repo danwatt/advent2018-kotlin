@@ -1,4 +1,4 @@
-package org.danwatt
+package org.danwatt.advent2018
 
 class Day2 : Day<Int, String>(2) {
     override fun partOne(): Int = checksum(this.loadLines())

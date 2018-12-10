@@ -1,4 +1,4 @@
-package org.danwatt
+package org.danwatt.advent2018
 
 class Day5 : Day<Int, Int>(5) {
     override fun partOne(): Int = react(loadLines()[0]).length
@@ -31,5 +31,3 @@ class Day5 : Day<Int, Int>(5) {
 
     }
 }
-
-private fun String.last(): Char = this[this.length - 1]

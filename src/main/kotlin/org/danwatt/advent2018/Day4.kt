@@ -1,4 +1,4 @@
-package org.danwatt
+package org.danwatt.advent2018
 
 class Day4 : Day<Int, Int>(4) {
     override fun partOne(): Int {
@@ -60,12 +60,3 @@ class Day4 : Day<Int, Int>(4) {
     }
 }
 
-private fun IntArray.maxWithIndex(): Pair<Int, Int>? {
-    var candidate: Pair<Int, Int>? = null
-    this.forEachIndexed { index, value ->
-        if (null == candidate || value > candidate!!.first) {
-            candidate = value to index
-        }
-    }
-    return candidate
-}

@@ -1,4 +1,4 @@
-package org.danwatt
+package org.danwatt.advent2018
 
 
 import org.assertj.core.api.Assertions.assertThat

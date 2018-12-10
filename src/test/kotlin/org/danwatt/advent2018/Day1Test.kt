@@ -1,6 +1,7 @@
-package org.danwatt
+package org.danwatt.advent2018
 
 import org.assertj.core.api.Assertions.assertThat
+import org.danwatt.advent2018.Day1
 import org.junit.Test
 
 class Day1Test {
